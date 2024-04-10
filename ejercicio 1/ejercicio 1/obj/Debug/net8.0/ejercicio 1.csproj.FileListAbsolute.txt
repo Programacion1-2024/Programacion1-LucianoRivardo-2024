@@ -1,0 +1,14 @@
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\bin\Debug\net8.0\ejercicio 1.exe
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\bin\Debug\net8.0\ejercicio 1.deps.json
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\bin\Debug\net8.0\ejercicio 1.runtimeconfig.json
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\bin\Debug\net8.0\ejercicio 1.dll
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\bin\Debug\net8.0\ejercicio 1.pdb
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.AssemblyInfoInputs.cache
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.AssemblyInfo.cs
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.csproj.CoreCompileInputs.cache
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.dll
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\refint\ejercicio 1.dll
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.pdb
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ejercicio 1.genruntimeconfig.cache
+C:\Users\lucho\Desktop\ejercicios pseudo 1\ejercicio 1\ejercicio 1\obj\Debug\net8.0\ref\ejercicio 1.dll
