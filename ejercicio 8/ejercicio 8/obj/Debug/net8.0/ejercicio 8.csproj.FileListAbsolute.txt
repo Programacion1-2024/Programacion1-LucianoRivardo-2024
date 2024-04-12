@@ -1,0 +1,15 @@
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\bin\Debug\net8.0\ejercicio 8.exe
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\bin\Debug\net8.0\ejercicio 8.deps.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\bin\Debug\net8.0\ejercicio 8.runtimeconfig.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\bin\Debug\net8.0\ejercicio 8.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\bin\Debug\net8.0\ejercicio 8.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.AssemblyInfoInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.AssemblyInfo.cs
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.csproj.CoreCompileInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.sourcelink.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\refint\ejercicio 8.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ejercicio 8.genruntimeconfig.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\ejercicio 8\ejercicio 8\obj\Debug\net8.0\ref\ejercicio 8.dll
