@@ -6,7 +6,7 @@ float total = 0;
 for (int i = 1; i <= 5; i++)
 {
     Console.Write($"ingresar costo de unidad n° {i}: ");
-    if (!float.TryParse(Console.ReadLine(), out float numero))
+    if (!float.TryParse(Console.ReadLine()?.Replace(".",","), out float numero))
     {
         Console.WriteLine("Dato invalido, reintente otra vez: ");
         i--;
@@ -16,7 +16,7 @@ for (int i = 1; i <= 5; i++)
         total += numero;
     }
     Console.Write($"ingresar cantidad comprada de unidad n° {i}: ");
-    if (!float.TryParse(Console.ReadLine(), out float numero2))
+    if (!float.TryParse(Console.ReadLine()?.Replace(".", ","), out float numero2))
     {
         Console.WriteLine("Dato invalido, reintente otra vez: ");
         i--;
