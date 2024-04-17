@@ -1,9 +1,9 @@
 ﻿// El usuario ingresará valores positivos, cuando no tenga más valores ingresará 0
 // (cero).El sistema deberá informar la suma de los ingresados.
 
-
+float valor;
 Console.WriteLine("ingresar un valor");
-if (!float.TryParse(Console.ReadLine().Replace(".",","), out float valor))
+if (!float.TryParse(Console.ReadLine().Replace(".",","), out valor))
 {
     Console.WriteLine("valor incorrecto");
 }
@@ -13,22 +13,14 @@ else
     while (valor != 0)
     {
         Console.WriteLine("ingresar un valor");
-        if (float.TryParse(Console.ReadLine().Replace(".",","), out float numero))
+        if (float.TryParse(Console.ReadLine().Replace(".",","), out valor))
         {
-            if (numero == 0)
-            {
-                valor = 0;
-            }
-            else
-            {
-                total = total + numero;
-                
-            }
+            total = total + valor;
         }
         else
         {
             Console.WriteLine("valor incorrecto");
         }
     }
-    Console.WriteLine(total);
+    Console.WriteLine("la suma de todos los datos ingresados es: " + total);
 }
