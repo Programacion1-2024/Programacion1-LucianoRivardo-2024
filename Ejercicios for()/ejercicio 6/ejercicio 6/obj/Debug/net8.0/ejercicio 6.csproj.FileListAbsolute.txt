@@ -1,0 +1,15 @@
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\bin\Debug\net8.0\ejercicio 6.exe
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\bin\Debug\net8.0\ejercicio 6.deps.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\bin\Debug\net8.0\ejercicio 6.runtimeconfig.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\bin\Debug\net8.0\ejercicio 6.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\bin\Debug\net8.0\ejercicio 6.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.AssemblyInfoInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.AssemblyInfo.cs
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.csproj.CoreCompileInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.sourcelink.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\refint\ejercicio 6.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ejercicio 6.genruntimeconfig.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios for()\ejercicio 6\ejercicio 6\obj\Debug\net8.0\ref\ejercicio 6.dll
