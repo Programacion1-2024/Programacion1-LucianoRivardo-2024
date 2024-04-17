@@ -9,7 +9,7 @@ for (int i = 0; i < 4; i++)
     string nombre = Console.ReadLine();
 
     Console.WriteLine("ingresar total gastado: ");
-    if (float.TryParse(Console.ReadLine(),out float valor))
+    if (float.TryParse(Console.ReadLine()?.Replace(".", ","), out float valor))
     {
         gastado = valor;
     }
