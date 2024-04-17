@@ -6,7 +6,7 @@ float suma = 0;
 for (int i = 1; i <= 8; i++)
 {
     Console.WriteLine($"ingresar valor n° {i}: ");
-    if (!float.TryParse( Console.ReadLine(), out float numero))
+    if (!float.TryParse( Console.ReadLine()?.Replace(".",","), out float numero))
     {
         Console.WriteLine("dato incorrecto");
         i--;
