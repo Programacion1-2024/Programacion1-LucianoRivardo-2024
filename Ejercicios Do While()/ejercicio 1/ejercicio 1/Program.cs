@@ -14,8 +14,15 @@ do
     {
         Console.WriteLine("contraseña incorrecta, intente otra vez.");
     }
+    else
+    {
+        if (contra != 667788)
+        {
+            Console.WriteLine("contraseña incorrecta, intente otra vez.");
+        }
+    }
 }
 while (contra != 667788);
 {
-    Console.WriteLine("contraseña aceptada.");
+    Console.WriteLine("contraseña aceptada :) ");
 }
