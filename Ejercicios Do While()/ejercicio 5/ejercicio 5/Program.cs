@@ -1,9 +1,9 @@
-﻿// Se le solicitará ingresar números al usuario, se repetirá el pedido hasta que ingrese
-// un número mayor a 3 cifras. Mostrar la suma total de todos los ingresados antes del
-// corte.
+﻿// Siguiendo con el ejercicio anterior, al ingresar uno mayor a 3 cifras se mostrará el
+// promedio de los ingresados.
 
 float numero;
 float aux = 0;
+int i = 0;
 do
 {
     Console.WriteLine("ingrese un numero: ");
@@ -12,6 +12,7 @@ do
         if (numero < 100 && numero > -100)
         {
             aux += numero;
+            i++;
         }
     }
     else
@@ -20,4 +21,4 @@ do
     }
 }
 while (numero < 100 && numero > -100);
-Console.WriteLine("la suma de los numeros ingresados es: " + (aux));
+Console.WriteLine("el promedio de los numeros ingresados es: " + (aux/i));
