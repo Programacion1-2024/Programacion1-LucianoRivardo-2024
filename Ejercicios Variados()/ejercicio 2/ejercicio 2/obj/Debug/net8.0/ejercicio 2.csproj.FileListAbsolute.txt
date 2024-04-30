@@ -1,0 +1,15 @@
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\bin\Debug\net8.0\ejercicio 2.exe
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\bin\Debug\net8.0\ejercicio 2.deps.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\bin\Debug\net8.0\ejercicio 2.runtimeconfig.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\bin\Debug\net8.0\ejercicio 2.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\bin\Debug\net8.0\ejercicio 2.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.AssemblyInfoInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.AssemblyInfo.cs
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.csproj.CoreCompileInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.sourcelink.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\refint\ejercicio 2.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ejercicio 2.genruntimeconfig.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Variados()\ejercicio 2\ejercicio 2\obj\Debug\net8.0\ref\ejercicio 2.dll

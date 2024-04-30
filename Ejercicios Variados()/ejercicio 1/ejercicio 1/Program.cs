@@ -19,7 +19,7 @@ while(codigo != 0)
             break;
         }
         Console.WriteLine($"ingres un precio para el codigo n° {codigo}. ");
-        if (!float.TryParse(Console.ReadLine(), out float precio))
+        if (!float.TryParse(Console.ReadLine()?.Replace(",","."), out float precio))
         {
             Console.WriteLine("dato incorrecto intente otra vez");
         }
