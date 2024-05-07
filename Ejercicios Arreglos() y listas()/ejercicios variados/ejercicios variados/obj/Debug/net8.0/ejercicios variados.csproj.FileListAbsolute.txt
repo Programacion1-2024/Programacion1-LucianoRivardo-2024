@@ -1,0 +1,15 @@
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.AssemblyInfoInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.AssemblyInfo.cs
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.csproj.CoreCompileInputs.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.sourcelink.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\bin\Debug\net8.0\ejercicios variados.exe
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\bin\Debug\net8.0\ejercicios variados.deps.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\bin\Debug\net8.0\ejercicios variados.runtimeconfig.json
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\bin\Debug\net8.0\ejercicios variados.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\bin\Debug\net8.0\ejercicios variados.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\refint\ejercicios variados.dll
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.pdb
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ejercicios variados.genruntimeconfig.cache
+C:\Users\lucho\Desktop\programacion 1 repositorio\Programacion1-LucianoRivardo-2024\Ejercicios Arreglos() y listas()\ejercicios variados\ejercicios variados\obj\Debug\net8.0\ref\ejercicios variados.dll
