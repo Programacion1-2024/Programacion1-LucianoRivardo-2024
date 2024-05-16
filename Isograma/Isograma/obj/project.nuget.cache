@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p9V4jn9S9fJ2G4Oul8Nr4wmymdu+z+wukY6CkBj+6Y0WmaZR4IR+LZwz83tyraWien8sjaJCaZSIUk1GDLyvIw==",
+  "dgSpecHash": "duGkdYJ9b2FZdjBLtlbv9pJylpV/01Xm9SI/pfGrh1uRjxIf917dNnp04xTYBkUT2hubuVMdK7k0NXccs0J9Vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\Isograma.csproj",
+  "projectFilePath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\Isograma.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucho\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\lucho\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

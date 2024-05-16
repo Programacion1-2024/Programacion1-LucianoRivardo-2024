@@ -3,26 +3,42 @@
 
 using System.Diagnostics.Contracts;
 
-string usuario;
-int contra;
+//string usuario;
+//int contra;
+//do
+//{
+//    Console.WriteLine("ingrese nombre de usuario: ");
+//    usuario = Console.ReadLine();
+//    Console.WriteLine("ingrese la contraseña: ");
+//    if ((!int.TryParse(Console.ReadLine(), out contra)))
+//    {
+//        Console.WriteLine("contraseña incorrecta, intente otra vez.");
+//    }
+//    else
+//    {
+//        if (contra != 667788)
+//        {
+//            Console.WriteLine("contraseña incorrecta, intente otra vez.");
+//        }
+//    }
+//}
+//while (contra != 667788);
+//{
+//    Console.WriteLine("contraseña aceptada :) ");
+//}
+
+string contraseña = "";
 do
 {
     Console.WriteLine("ingrese nombre de usuario: ");
-    usuario = Console.ReadLine();
+    string usuario = Console.ReadLine();
     Console.WriteLine("ingrese la contraseña: ");
-    if ((!int.TryParse(Console.ReadLine(), out contra)))
+    contraseña = Console.ReadLine();
+    if (contraseña != "667788")
     {
-        Console.WriteLine("contraseña incorrecta, intente otra vez.");
+        Console.WriteLine("contraseña incorrecta");
     }
-    else
-    {
-        if (contra != 667788)
-        {
-            Console.WriteLine("contraseña incorrecta, intente otra vez.");
-        }
-    }
+    
 }
-while (contra != 667788);
-{
-    Console.WriteLine("contraseña aceptada :) ");
-}
+while (contraseña != "667788");
+Console.WriteLine("contraseña correcta :)");

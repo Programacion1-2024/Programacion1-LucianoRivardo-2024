@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TJYBaAyDzp5/i+0JdEAOsHa2LjdoXmujH3u7SzT6U0fh/R7fC1FwLY1tGTEOHlpOQaQygL96vEnv00kf+lrguQ==",
+  "dgSpecHash": "EB/pSkkUmdV1Y8lKdQLG/kku+LyaAUK3yozPUFbfGeQ2ueB13HiH9dcBq3shDOW73OYSQD88wMuC+W/xEjKHFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Pangrama.csproj",
+  "projectFilePath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Pangrama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucho\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\lucho\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

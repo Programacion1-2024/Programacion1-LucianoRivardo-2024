@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\Isograma.csproj": {}
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\Isograma.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\Isograma.csproj": {
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\Isograma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\Isograma.csproj",
+        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\Isograma.csproj",
         "projectName": "Isograma",
-        "projectPath": "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\Isograma.csproj",
+        "projectPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\Isograma.csproj",
         "packagesPath": "C:\\Users\\lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucho\\Desktop\\Isograma\\Isograma\\obj\\",
+        "outputPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Isograma\\Isograma\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucho\\Desktop\\Pangrama\\",
+  "WorkspaceRootPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|c:\\users\\lucho\\desktop\\pangrama\\pangrama\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|c:\\users\\lucho\\desktop\\programacion 1 repositorio\\programacion1-lucianorivardo-2024\\pangrama\\pangrama\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|solutionrelative:pangrama\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|c:\\users\\lucho\\desktop\\pangrama\\pangrama\\pangramatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|c:\\users\\lucho\\desktop\\programacion 1 repositorio\\programacion1-lucianorivardo-2024\\pangrama\\pangrama\\pangramatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78D686A5-DC06-4E2D-8D8B-54C4D4F20681}|Pangrama\\Pangrama.csproj|solutionrelative:pangrama\\pangramatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Ejercicio.cs",
-              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Ejercicio.cs",
               "RelativeDocumentMoniker": "Pangrama\\Ejercicio.cs",
-              "ToolTip": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Ejercicio.cs",
               "RelativeToolTip": "Pangrama\\Ejercicio.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAqwCQAAAAFAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T23:40:46.86Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PangramaTests.cs",
-              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\PangramaTests.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\PangramaTests.cs",
               "RelativeDocumentMoniker": "Pangrama\\PangramaTests.cs",
-              "ToolTip": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\PangramaTests.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\PangramaTests.cs",
               "RelativeToolTip": "Pangrama\\PangramaTests.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAIAAAAeAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T23:43:23.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T23:43:23.18Z"
             }
           ]
         }

@@ -23,14 +23,12 @@
             char[] abecedario = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
             foreach (char i in abecedario)
             {
-                if (i != ' ' && i != '-')
-                {
+
                     if (!input.Contains(i))
                     {
                         return false;
                     }
-                }
-               
+                               
             }
             return true;
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Pangrama.csproj": {}
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Pangrama.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Pangrama.csproj": {
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Pangrama.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Pangrama.csproj",
+        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Pangrama.csproj",
         "projectName": "Pangrama",
-        "projectPath": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\Pangrama.csproj",
+        "projectPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\Pangrama.csproj",
         "packagesPath": "C:\\Users\\lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucho\\Desktop\\Pangrama\\Pangrama\\obj\\",
+        "outputPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Pangrama\\Pangrama\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -7,7 +7,7 @@
 //    if (!string.IsNullOrWhiteSpace(palabra))
 //    {
 //        palabras.Add(palabra);
-//    } 
+//    }
 //}
 //while (!string.IsNullOrWhiteSpace(palabra));
 //palabras.Sort();
@@ -43,34 +43,77 @@
 //    Console.Write($"{i} :");
 //}
 
-using Microsoft.VisualBasic;
+//using Microsoft.VisualBasic;
 
-float numero;
-List <float> numerosFiltrados = new List<float>();
-List<float> numeros = new List<float>();
+//float numero;
+//List <float> numerosFiltrados = new List<float>();
+//List<float> numeros = new List<float>();
+//do
+//{
+//    Console.WriteLine("ingrese un numero: ");
+//    if (!float.TryParse(Console.ReadLine()?.Replace(",", "."), out numero))
+//    {
+//        Console.WriteLine("error ingreso un dato incorrecto");
+//    }
+//    else if (numero != 0)
+//    {
+//        numeros.Add(numero);        
+//    }
+//}
+//while (numero != 0);
+//foreach (int i in numeros)
+//{
+//    if (i % 2 == 0)
+//    {
+//        numerosFiltrados.Add(i);
+//    }
+//}
+//numerosFiltrados.Sort();
+//numerosFiltrados.Reverse();
+//foreach (int i in numerosFiltrados)
+//{
+//    Console.Write($"{i} :");
+//}
+
+//List<int> numeros = new List<int>();
+//int numero;
+//do
+//{
+//    Console.WriteLine("ingrese numero");
+//    if (!int.TryParse(Console.ReadLine(), out numero))
+//    {
+//        Console.WriteLine("error");
+//    }
+//    else if (numero != 0)
+//    {
+//        numeros.Add(numero);
+//    }
+//}
+//while (numero != 0);
+//numeros.Sort();
+//numeros.Reverse();
+//foreach(int num in numeros)
+//{
+//    if (num % 2 == 0)
+//    {
+//        Console.Write($"{num}, ");
+//    }
+//}
+
+List<string> palabras = new List<string>();
+string? palabra;
 do
 {
-    Console.WriteLine("ingrese un numero: ");
-    if (!float.TryParse(Console.ReadLine()?.Replace(",", "."), out numero))
+    Console.WriteLine("ingrese una palabra");
+    palabra = Console.ReadLine();
+    if (!string.IsNullOrWhiteSpace(palabra) && palabra != "FIN")
     {
-        Console.WriteLine("error ingreso un dato incorrecto");
-    }
-    else if (numero != 0)
-    {
-        numeros.Add(numero);        
+        palabras.Add(palabra);
     }
 }
-while (numero != 0);
-foreach (int i in numeros)
+while (!string.IsNullOrWhiteSpace(palabra) && palabra != "FIN");
+palabras.Sort();
+foreach (string i in palabras)
 {
-    if (i % 2 == 0)
-    {
-        numerosFiltrados.Add(i);
-    }
-}
-numerosFiltrados.Sort();
-numerosFiltrados.Reverse();
-foreach (int i in numerosFiltrados)
-{
-    Console.Write($"{i} :");
+    Console.WriteLine(i);
 }
