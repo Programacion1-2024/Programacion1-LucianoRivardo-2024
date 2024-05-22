@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lY7s17qpyy2MV0KUfQT6uKzQH43aCSDX/TZ14VkmY/CTty3RKvVkYOl/PL6oKEwzFUrtSAnOw1yYqRjDdRpPZg==",
+  "dgSpecHash": "QTk38RaCnYA3P9jMz8MKkfxk913ouvaRfUrw3zNF6LgJDFqnduiAQx/zpnVpA6+haLZEiGh8BZwhAGnbVhwCUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucho\\Desktop\\Numeros de Armstrong\\Numeros de Armstrong\\Numeros de Armstrong.csproj",
+  "projectFilePath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Numeros de Armstrong\\Numeros de Armstrong\\Numeros de Armstrong.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucho\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\lucho\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

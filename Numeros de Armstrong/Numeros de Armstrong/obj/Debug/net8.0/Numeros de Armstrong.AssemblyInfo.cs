@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Numeros de Armstrong")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a9dab2afe6beded0c4821d64129b20f252b1cde")]
 [assembly: System.Reflection.AssemblyProductAttribute("Numeros de Armstrong")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Numeros de Armstrong")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
