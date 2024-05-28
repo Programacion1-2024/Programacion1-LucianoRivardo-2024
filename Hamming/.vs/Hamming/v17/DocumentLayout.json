@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucho\\Desktop\\Hamming\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5F5550-94C5-4DF0-9981-092A7A8BAF5E}|Hamming\\Hamming.csproj|c:\\users\\lucho\\desktop\\hamming\\hamming\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5F5550-94C5-4DF0-9981-092A7A8BAF5E}|Hamming\\Hamming.csproj|solutionrelative:hamming\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5F5550-94C5-4DF0-9981-092A7A8BAF5E}|Hamming\\Hamming.csproj|c:\\users\\lucho\\desktop\\hamming\\hamming\\hammingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5F5550-94C5-4DF0-9981-092A7A8BAF5E}|Hamming\\Hamming.csproj|solutionrelative:hamming\\hammingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HammingTests.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Hamming\\Hamming\\HammingTests.cs",
+              "RelativeDocumentMoniker": "Hamming\\HammingTests.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\Hamming\\Hamming\\HammingTests.cs",
+              "RelativeToolTip": "Hamming\\HammingTests.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T22:14:31.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Hamming\\Hamming\\Ejercicio.cs",
+              "RelativeDocumentMoniker": "Hamming\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\Hamming\\Hamming\\Ejercicio.cs",
+              "RelativeToolTip": "Hamming\\Ejercicio.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAiwCMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T21:58:40.554Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
