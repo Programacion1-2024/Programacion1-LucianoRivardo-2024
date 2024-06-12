@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj": {}
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj": {
+    "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
+        "projectUniqueName": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
         "projectName": "El Interes es Interesante",
-        "projectPath": "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
+        "projectPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
         "packagesPath": "C:\\Users\\lucho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\obj\\",
+        "outputPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nwNFEyptKW7dzUdxbiGZQKNmfqGDOgSW4n4tlc//gItRH7wGej2lal0jZpNz90dvjyVBeIOQ+K1m0jxWVCXsGw==",
+  "dgSpecHash": "0UWA8ZV8jf7qxnznt1TzpBPzJH2Hks4Ahn5YIjPyJi5jX0H7VgG79t1wgNJ8TW6GvjANn4pXcLHN3iXrGjll5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucho\\Desktop\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
+  "projectFilePath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\El Interes es Interesante\\El Interes es Interesante\\El Interes es Interesante.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucho\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\lucho\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
