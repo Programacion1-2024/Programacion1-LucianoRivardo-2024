@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CEntidades.Entidades
 {
-    public class Editorial
+    public class Genero
     {
-        public int IdEditorial { get; set; }
+        public int IdGenero { get; set; }
         public string Nombre { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
+        public string Descripcion { get; set; }
     }
 }

@@ -1,5 +1,7 @@
-﻿using CEntidades.Entidades;
+﻿using Azure;
+using CEntidades.Entidades;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
 
 namespace CDatos.Contexts
 {
@@ -21,6 +23,7 @@ namespace CDatos.Contexts
         public virtual DbSet<Editorial> Editorial { get; set; }
         public virtual DbSet<Empleado> Empleado { get; set; }
         public virtual DbSet<FormaPago> FormaPago { get; set; }
+        public virtual DbSet<Genero> Genero { get; set; }
         public virtual DbSet<GeneroLibro> GeneroLibro { get; set; }
         public virtual DbSet<Libro> Libro { get; set; }
         public virtual DbSet<Persona> Persona { get; set; }
@@ -45,6 +48,12 @@ namespace CDatos.Contexts
             {
                 entity.HasKey(e => e.IdAutor)
                     .HasName("PK_ID_AUTOR");
+                entity.HasMany(e => e.Libros)
+                      .WithMany(e => e.Autores)
+                      .UsingEntity<AutorLibro>(
+                        a => a.HasOne<Libro>().WithMany().HasForeignKey(e => e.IdLibro),
+                        l => l.HasOne<Autor>().WithMany().HasForeignKey(e => e.IdAutor)
+                      );
             });
             modelBuilder.Entity<AutorLibro>(entity =>
             {
@@ -55,6 +64,10 @@ namespace CDatos.Contexts
             {
                 entity.HasKey(e => e.IdCliente)
                     .HasName("PK_ID_CLIENTE");
+                entity.HasMany(e => e.Prestamos)
+                    .WithOne(e => e.Cliente)
+                    .HasForeignKey("IdCliente")
+                    .IsRequired();
             });
             modelBuilder.Entity<CopiaLibro>(entity =>
             {
@@ -76,6 +89,11 @@ namespace CDatos.Contexts
                 entity.HasKey(e => e.IdFormaPago)
                     .HasName("PK_ID_FORMAPAGO");
             });
+            modelBuilder.Entity<Genero>(entity =>
+            {
+                entity.HasKey(e => e.IdGenero)
+                    .HasName("PK_ID_GENERO");
+            });
             modelBuilder.Entity<GeneroLibro>(entity =>
             {
                 entity.HasKey(e => e.IdGeneroLibro)
@@ -90,6 +108,14 @@ namespace CDatos.Contexts
             {
                 entity.HasKey(e => e.IdPersona)
                     .HasName("PK_ID_PERSONA");
+                entity.HasOne(e => e.Autor)
+                    .WithOne(e => e.Persona)
+                    .HasForeignKey<Autor>("IdPersona")
+                    .IsRequired(false);
+                entity.HasOne(e => e.Cliente)
+                    .WithOne(e => e.Persona)
+                    .HasForeignKey<Cliente>("IdPersona")
+                    .IsRequired(false);
             });
             modelBuilder.Entity<Prestamo>(entity =>
             {
