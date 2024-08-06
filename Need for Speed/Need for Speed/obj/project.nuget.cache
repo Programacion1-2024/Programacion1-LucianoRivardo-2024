@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7p2ipHf0IuTFXnqos56KOVnuRBHZDzvDB9Hkeuh/ihoUn7tTEiCUqnkfwuNsqarnF1OSlIwx2DEDBSyLcFHNHg==",
+  "dgSpecHash": "HJGgB8MMy1HfRE03iOKj8aryDbw1WOgPySYULEGQZjcpG4QuQOLt0Bwh2wgPFsqaaGar4GEnkbNx3DTQri3b0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucho\\Desktop\\Need for Speed\\Need for Speed\\Need for Speed.csproj",
+  "projectFilePath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\Need for Speed\\Need for Speed.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucho\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\lucho\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

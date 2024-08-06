@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucho\\Desktop\\Need for Speed\\",
+  "WorkspaceRootPath": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|c:\\users\\lucho\\desktop\\need for speed\\need for speed\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|c:\\users\\lucho\\desktop\\programacion 1 repositorio\\programacion1-lucianorivardo-2024\\need for speed\\need for speed\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|solutionrelative:need for speed\\ejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|c:\\users\\lucho\\desktop\\need for speed\\need for speed\\needforspeedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|c:\\users\\lucho\\desktop\\programacion 1 repositorio\\programacion1-lucianorivardo-2024\\need for speed\\need for speed\\needforspeedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC3CB613-B6F1-4690-A1A9-7270073CA9F7}|Need for Speed\\Need for Speed.csproj|solutionrelative:need for speed\\needforspeedtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NeedForSpeedTests.cs",
-              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Need for Speed\\Need for Speed\\NeedForSpeedTests.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\Need for Speed\\NeedForSpeedTests.cs",
               "RelativeDocumentMoniker": "Need for Speed\\NeedForSpeedTests.cs",
-              "ToolTip": "C:\\Users\\lucho\\Desktop\\Need for Speed\\Need for Speed\\NeedForSpeedTests.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\Need for Speed\\NeedForSpeedTests.cs",
               "RelativeToolTip": "Need for Speed\\NeedForSpeedTests.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAwwAsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -37,11 +37,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Ejercicio.cs",
-              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\Need for Speed\\Need for Speed\\Ejercicio.cs",
+              "DocumentMoniker": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\Need for Speed\\Ejercicio.cs",
               "RelativeDocumentMoniker": "Need for Speed\\Ejercicio.cs",
-              "ToolTip": "C:\\Users\\lucho\\Desktop\\Need for Speed\\Need for Speed\\Ejercicio.cs",
+              "ToolTip": "C:\\Users\\lucho\\Desktop\\programacion 1 repositorio\\Programacion1-LucianoRivardo-2024\\Need for Speed\\Need for Speed\\Ejercicio.cs",
               "RelativeToolTip": "Need for Speed\\Ejercicio.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAIwJkAAAAAAAAA",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAqwJIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T23:12:37.632Z",
               "EditorCaption": ""
