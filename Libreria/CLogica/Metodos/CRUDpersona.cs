@@ -39,15 +39,15 @@ namespace CLogica.Metodos
             persona.TipoDocumento = personaNueva.TipoDocumento;
             persona.Telefono = personaNueva.Telefono;
             persona.Email = personaNueva.Email;
-            if (persona.Autor != null)
+            if (personaNueva.Autor != null)
             {
                 persona.Autor = personaNueva.Autor;
             }
-            if (persona.Empleado != null)
+            if (personaNueva.Empleado != null)
             {
                 persona.Empleado = personaNueva.Empleado;
             }
-            if (persona.Cliente != null)
+            if (personaNueva.Cliente != null)
             {
                 persona.Cliente = personaNueva.Cliente;
             }
