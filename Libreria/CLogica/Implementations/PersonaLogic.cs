@@ -20,9 +20,11 @@ namespace CLogica.Implementations
         public PersonaLogic(IPersonaRepository personaRepository) {
             _personaRepository = personaRepository;
         }
-        public void AgregaPersona(Persona personaNueva)
+        public void AgregarPersona(Persona personaNueva)
         {
-            List<String> camposinvalidos = new List<string>();
+
+            if (DocumentoExistente(personaNueva.Documento)) 
+                throw new ArgumentException("Documento ya existente");
 
             if (string.IsNullOrEmpty(personaNueva.Nombre) || !IsValidName(personaNueva.Nombre))
                 throw new ArgumentException("Nombre inválido");
@@ -38,11 +40,6 @@ namespace CLogica.Implementations
 
             if (string.IsNullOrEmpty(personaNueva.Email) || !IsValidEmail(personaNueva.Email))
                 throw new ArgumentException("Email inválido");
-
-            if (camposinvalidos.Count > 0)
-            {
-                throw new ArgumentException();
-            }
 
             Persona persona = new Persona();
             persona.Nombre = personaNueva.Nombre;
@@ -72,8 +69,7 @@ namespace CLogica.Implementations
         {
             if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
                 throw new ArgumentException("documento inválido");
-
-            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FistrOrDefault();
+            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
             if (persona == null)
             {
                 throw new ArgumentNullException("no se encontro una persona con ese documento");
@@ -98,7 +94,7 @@ namespace CLogica.Implementations
         }
         private bool IsValidName(string nombre)
         {
-            return ContieneCaracter(nombre) && nombre.Length == 15;
+            return ContieneCaracter(nombre) && nombre.Length < 15;
         }
 
         private bool IsValidDocumento(string documento)
@@ -115,5 +111,14 @@ namespace CLogica.Implementations
         {
             return email.Contains('@') && ContieneCaracter(email);
         }
+
+        private bool DocumentoExistente(string documento)
+        {
+            var documentoExistente = _personaRepository
+            .FindByCondition(p => p.Documento == documento)
+            .FirstOrDefault();
+            return documentoExistente != null;
+        }
+
     } 
 }

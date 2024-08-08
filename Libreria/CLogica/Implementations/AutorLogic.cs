@@ -17,5 +17,14 @@ namespace CLogica.Implementations
         {
             return await _autorRepository.GetAll();
         }
+
+        public void AgregarAutor(Autor autorNuevo)
+        {
+            Autor autor = new Autor();
+            autor.Biografia = autorNuevo.Biografia;
+            autor.FechaNacimiento = autorNuevo.FechaNacimiento;
+            autor.PersonaAutor = autorNuevo.PersonaAutor;
+            autor.Libros = autorNuevo.Libros;   
+        }
     }
 }
