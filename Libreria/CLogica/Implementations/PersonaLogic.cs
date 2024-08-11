@@ -10,6 +10,7 @@ using Azure.Identity;
 using CDatos.Repositories;
 using CDatos.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CLogica.Implementations
 {
@@ -20,105 +21,54 @@ namespace CLogica.Implementations
         public PersonaLogic(IPersonaRepository personaRepository) {
             _personaRepository = personaRepository;
         }
-        public void AgregarPersona(Persona personaNueva)
+        public void ModificarPersona(string documento, Persona personaActualizada)
         {
+            Persona personaExistente = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            if (personaExistente == null)
+                throw new ArgumentException("Persona no encontrada");
 
-            if (DocumentoExistente(personaNueva.Documento)) 
-                throw new ArgumentException("Documento ya existente");
+            personaExistente.Nombre = personaActualizada.Nombre;
+            personaExistente.Apellido = personaActualizada.Apellido;
+            personaExistente.Telefono = personaActualizada.Telefono;
+            personaExistente.Email = personaActualizada.Email;
+            personaExistente.Nacionalidad = personaActualizada.Nacionalidad;
 
-            if (string.IsNullOrEmpty(personaNueva.Nombre) || !IsValidName(personaNueva.Nombre))
-                throw new ArgumentException("Nombre inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Apellido) || !IsValidName(personaNueva.Apellido))
-                throw new ArgumentException("Apellido inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Documento) || !IsValidDocumento(personaNueva.Documento))
-                throw new ArgumentException("Documento inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Telefono) || !IsValidTelefono(personaNueva.Telefono))
-                throw new ArgumentException("Teléfono inválido");
-
-            if (string.IsNullOrEmpty(personaNueva.Email) || !IsValidEmail(personaNueva.Email))
-                throw new ArgumentException("Email inválido");
-
-            Persona persona = new Persona();
-            persona.Nombre = personaNueva.Nombre;
-            persona.Apellido = personaNueva.Apellido;
-            persona.Nacionalidad = personaNueva.Nacionalidad;
-            persona.Documento = personaNueva.Documento;
-            persona.TipoDocumento = personaNueva.TipoDocumento;
-            persona.Telefono = personaNueva.Telefono;
-            persona.Email = personaNueva.Email;
-            if (personaNueva.Autor != null)
+            // actualizo atributos espesificos
+            if (personaExistente.Autor != null && personaActualizada.Autor != null)
             {
-                persona.Autor = personaNueva.Autor;
+                personaExistente.Autor.Biografia = personaActualizada.Autor.Biografia;
+                personaExistente.Autor.FechaNacimiento = personaActualizada.Autor.FechaNacimiento;
+                personaExistente.Autor.Libros = personaActualizada.Autor.Libros;
             }
-            if (personaNueva.Empleado != null)
+
+            if (personaExistente.Cliente != null && personaActualizada.Cliente != null)
             {
-                persona.Empleado = personaNueva.Empleado;
+              
             }
-            if (personaNueva.Cliente != null)
+
+            if (personaExistente.Empleado != null && personaActualizada.Empleado != null)
             {
-                persona.Cliente = personaNueva.Cliente;
+                
             }
-            _personaRepository.Create(persona);
+            _personaRepository.Update(personaExistente);
             _personaRepository.Save();
         }
 
-        public void ModificarPersona(string documento, Persona personaModificada)
+        public void EliminarPersona(string documento)
         {
-            if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
-                throw new ArgumentException("documento inválido");
-            Persona? persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            Persona persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
             if (persona == null)
-            {
-                throw new ArgumentNullException("no se encontro una persona con ese documento");
-            }
-            persona.Nombre = personaModificada.Nombre;
-            persona.Apellido = personaModificada.Apellido;
-            persona.Documento = personaModificada.Documento;
-            persona.Telefono = personaModificada.Telefono;
-            persona.Email = personaModificada.Email;
-
-        }
-
-        public void EliminarPersona(Persona persona)
-        {
+                throw new ArgumentException("Persona no encontrada");
             _personaRepository.Delete(persona);
             _personaRepository.Save();
         }
-        public bool ContieneCaracter(string text)
+        public Persona ObtenerPersona(string documento)
         {
-            char[] caracteres = { '!', '"', '#', '$', '%', '&', '/', '(', ')', '=', '.', ',', };
-            return caracteres.Any(p => text.Contains(p));
-        }
-        private bool IsValidName(string nombre)
-        {
-            return ContieneCaracter(nombre) && nombre.Length < 15;
-        }
+            Persona persona = _personaRepository.FindByCondition(p => p.Documento == documento).FirstOrDefault();
+            if (persona == null)
+                throw new ArgumentException("Persona no encontrada");
 
-        private bool IsValidDocumento(string documento)
-        {
-            return documento.Length != 8 && ContieneCaracter(documento);
+            return persona;
         }
-
-        private bool IsValidTelefono(string telefono)
-        {
-            return telefono.Length != 10 && ContieneCaracter(telefono);
-        }
-
-        private bool IsValidEmail(string email)
-        {
-            return email.Contains('@') && ContieneCaracter(email);
-        }
-
-        private bool DocumentoExistente(string documento)
-        {
-            var documentoExistente = _personaRepository
-            .FindByCondition(p => p.Documento == documento)
-            .FirstOrDefault();
-            return documentoExistente != null;
-        }
-
     } 
 }

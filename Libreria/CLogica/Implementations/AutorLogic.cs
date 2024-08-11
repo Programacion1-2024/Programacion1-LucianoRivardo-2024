@@ -1,6 +1,8 @@
-﻿using CDatos.Repositories.Contracts;
+﻿using CDatos.Repositories;
+using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
+using CLogica.Implementations;
 
 namespace CLogica.Implementations
 {
@@ -17,14 +19,42 @@ namespace CLogica.Implementations
         {
             return await _autorRepository.GetAll();
         }
-
-        public void AgregarAutor(Autor autorNuevo)
+        public void CrearAutor(Autor autor) // creo el autor en el repo (bdd)
         {
-            Autor autor = new Autor();
-            autor.Biografia = autorNuevo.Biografia;
-            autor.FechaNacimiento = autorNuevo.FechaNacimiento;
-            autor.PersonaAutor = autorNuevo.PersonaAutor;
-            autor.Libros = autorNuevo.Libros;   
+            _autorRepository.Create(autor);
+            _autorRepository.Save();
+        }   
+        public void ModificarAutor(string documentoAutor, Autor autor)
+        {
+            Autor autorExistente = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
+            if (autorExistente == null)
+                throw new ArgumentException("Autor no encontrado");
+
+            autorExistente.Biografia = autor.Biografia;
+            autorExistente.FechaNacimiento = autor.FechaNacimiento;
+
+            _autorRepository.Update(autorExistente);
+            _autorRepository.Save();
+        }
+        public void EliminarAutor(string documentoAutor)
+        {
+            Autor autor = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
+            if (autor == null)
+                throw new ArgumentException("Autor no encontrado");
+
+            _autorRepository.Delete(autor);
+            _autorRepository.Save();
+        }
+        public Autor ObtenerAutor(string documentoAutor)
+        {
+            {
+                Autor autor = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
+                if (autor == null)
+                    throw new ArgumentException("Autor no encontrado");
+
+                return autor;
+            }
         }
     }
 }
+

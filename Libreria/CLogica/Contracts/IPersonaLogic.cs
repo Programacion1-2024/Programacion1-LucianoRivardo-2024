@@ -9,8 +9,8 @@ namespace CLogica.Contracts
 {
     public interface IPersonaLogic
     {
-        void AgregarPersona(Persona personaNueva);
-        void ModificarPersona(string documento, Persona personaModificada);
-        void EliminarPersona(Persona persona);
+        void ModificarPersona(string documento, Persona persona);
+        void EliminarPersona(string documento);
+        Persona ObtenerPersona(string documento);
     }
 }
