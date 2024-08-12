@@ -11,15 +11,19 @@ using CDatos.Repositories;
 using CDatos.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.EntityFrameworkCore;
 
 namespace CLogica.Implementations
 {
     public class PersonaLogic : IPersonaLogic
     {
         private IPersonaRepository _personaRepository;
+        private readonly DbContext _context;
 
-        public PersonaLogic(IPersonaRepository personaRepository) {
+
+        public PersonaLogic(IPersonaRepository personaRepository, DbContext context) {
             _personaRepository = personaRepository;
+            _context = context;
         }
         public void ModificarPersona(string documento, Persona personaActualizada)
         {
@@ -69,6 +73,15 @@ namespace CLogica.Implementations
                 throw new ArgumentException("Persona no encontrada");
 
             return persona;
+        }
+
+        public async Task<List<Persona>> ObtenerTodos()
+        //una task hace una operacion que se puede ejecutar en segundo plano,
+        //se usan para manejar operaciones que pueden tardar en completarse
+        {
+            return await _context.Set<Persona>().ToListAsync();
+            //await hace que el metodo espere a que termine una tarea sin bloquear
+            //el hilo en el que se esta ejecutando
         }
     } 
 }

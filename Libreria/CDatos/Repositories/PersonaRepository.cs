@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CEntidades.Entidades;
 using CDatos.Contexts;
+using Microsoft.EntityFrameworkCore;
 
 namespace CDatos.Repositories
 {
@@ -14,6 +15,17 @@ namespace CDatos.Repositories
         public PersonaRepository(LibreriaContext context): base(context)
         {
 
+        }
+        public async Task<List<Persona>> GetAll()
+        {
+            try
+            {
+                return await _context.Persona.ToListAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
