@@ -13,9 +13,15 @@ namespace CLogica.Implementations
     public class PersonaFactory : IPersonaFactory
     {
             private readonly IPersonaRepository _personaRepository;
-            public PersonaFactory(IPersonaRepository personaRepository)
+            private readonly IAutorLogic _autorLogic;
+            private readonly IEmpleadoLogic _empleadoLogic;
+            private readonly IClienteLogic _clienteLogic;
+        public PersonaFactory(IPersonaRepository personaRepository, IAutorLogic autorLogic, IClienteLogic clienteLogic, IEmpleadoLogic empleadoLogic)
         {
             _personaRepository = personaRepository;
+            _autorLogic = autorLogic;
+            _clienteLogic = clienteLogic;
+            _empleadoLogic = empleadoLogic;
         }
 
             public Persona CrearPersona(Persona personaNueva)
@@ -37,16 +43,19 @@ namespace CLogica.Implementations
             };
 
             if (personaNueva.Autor != null)
-            {
+            {    
                 persona.Autor = CrearAutor(personaNueva.Autor);
+                _autorLogic.CrearAutor(persona.Autor);
             }
             if (personaNueva.Cliente != null)
             {
                 persona.Cliente = CrearCliente(personaNueva.Cliente);
+                _clienteLogic.CrearCliente(persona.Cliente);
             }
             if (personaNueva.Empleado != null)
             {
                 persona.Empleado = CrearEmpleado(personaNueva.Empleado);
+                _empleadoLogic.CrearEmpleado(persona.Empleado);
             }
 
             return persona;
@@ -67,7 +76,10 @@ namespace CLogica.Implementations
             if (cliente == null) return null;
             return new Cliente
             {
-                EsSocio = cliente.EsSocio,
+                EsSocio = cliente.EsSocio,   
+                PagaIVA = cliente.PagaIVA,
+                Prestamos = cliente.Prestamos,
+                Ventas = cliente.Ventas,
             };
         }
 
@@ -77,6 +89,9 @@ namespace CLogica.Implementations
             return new Empleado
             {
                Cargo  = empleado.Cargo,
+               Sueldo = empleado.Sueldo,
+               Antiguedad = empleado.Antiguedad,
+
             };
         }
 
@@ -88,22 +103,22 @@ namespace CLogica.Implementations
             }
             private bool IsValidName(string nombre)
             {
-                return ContieneCaracter(nombre) && nombre.Length < 15;
+                return !ContieneCaracter(nombre) && nombre.Length <= 15;
             }
 
             private bool IsValidDocumento(string documento)
             {
-                return documento.Length != 8 && ContieneCaracter(documento);
+                return documento.Length == 8 && !ContieneCaracter(documento);
             }
 
             private bool IsValidTelefono(string telefono)
             {
-                return telefono.Length != 10 && ContieneCaracter(telefono);
+                return telefono.Length == 10 && !ContieneCaracter(telefono);
             }
 
             private bool IsValidEmail(string email)
             {
-                return email.Contains('@') && ContieneCaracter(email);
+                return email.Contains('@') && !ContieneCaracter(email);
             }
 
             private bool DocumentoExistente(string documento)

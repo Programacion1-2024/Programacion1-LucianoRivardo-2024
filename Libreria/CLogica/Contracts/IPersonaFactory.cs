@@ -10,9 +10,9 @@ namespace CLogica.Contracts
 {
     public interface IPersonaFactory
     {
-        Persona CrearPersona(Persona personaDto);
-        Autor CrearAutor(Autor autorDto);
-        Cliente CrearCliente(Cliente clienteDto);
-        Empleado CrearEmpleado(Empleado empleadoDto);
+        Persona CrearPersona(Persona persona);
+        Autor CrearAutor(Autor autor);
+        Cliente CrearCliente(Cliente cliente);
+        Empleado CrearEmpleado(Empleado empleado);
     }
 }

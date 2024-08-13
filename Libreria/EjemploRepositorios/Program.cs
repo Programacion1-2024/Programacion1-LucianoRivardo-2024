@@ -40,6 +40,8 @@ namespace EjemploRepositorios
 
                     services.AddTransient<IAutorRepository, AutorRepository>();
                     services.AddTransient<IPersonaRepository, PersonaRepository>();
+                    services.AddTransient<IEmpleadoRepository, EmpleadoRepository>();
+
 
                     services.AddTransient<Form1>();
 
