@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Tablas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace CDatos.Migrations
                 {
                     IdEditorial = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Contacto = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -45,8 +45,7 @@ namespace CDatos.Migrations
                 {
                     IdGenero = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -59,13 +58,12 @@ namespace CDatos.Migrations
                 {
                     IdPersona = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TipoDocumento = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TipoDocumento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nacionalidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -80,9 +78,9 @@ namespace CDatos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Precio = table.Column<float>(type: "real", nullable: false),
                     FechaPublicacion = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PrecioVenta = table.Column<float>(type: "real", nullable: false),
                     IdEditorial = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -102,8 +100,9 @@ namespace CDatos.Migrations
                 {
                     IdAutor = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Biografia = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Biografia = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CantidadLibrosEscritos = table.Column<int>(type: "int", nullable: false),
                     IdPersona = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -142,9 +141,9 @@ namespace CDatos.Migrations
                 {
                     IdEmpleado = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Antiguedad = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Cargo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sueldo = table.Column<double>(type: "float", nullable: false),
-                    Antiguedad = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IdPersona = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -181,14 +180,14 @@ namespace CDatos.Migrations
                 name: "GeneroLibro",
                 columns: table => new
                 {
-                    IdGenereoLibro = table.Column<int>(type: "int", nullable: false)
+                    IdGeneroLibro = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdLibro = table.Column<int>(type: "int", nullable: false),
                     IdGenero = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ID_GENEROLIBRO", x => x.IdGenereoLibro);
+                    table.PrimaryKey("PK_ID_GENEROLIBRO", x => x.IdGeneroLibro);
                     table.ForeignKey(
                         name: "FK_GeneroLibro_Genero_IdGenero",
                         column: x => x.IdGenero,
@@ -235,11 +234,11 @@ namespace CDatos.Migrations
                 {
                     IdVenta = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdCliente = table.Column<int>(type: "int", nullable: false),
-                    IdFormaPago = table.Column<int>(type: "int", nullable: false),
+                    FechaVenta = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IdLibro = table.Column<int>(type: "int", nullable: false),
                     IdEmpleado = table.Column<int>(type: "int", nullable: false),
-                    IdLibro = table.Column<int>(type: "int", nullable: false)
+                    IdCliente = table.Column<int>(type: "int", nullable: false),
+                    IdFormaPago = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -276,13 +275,13 @@ namespace CDatos.Migrations
                 {
                     IdPrestamo = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FechaEntrega = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaLimite = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaDevolucion = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IdEmpleado = table.Column<int>(type: "int", nullable: false),
                     IdCliente = table.Column<int>(type: "int", nullable: false),
                     IdCopia = table.Column<int>(type: "int", nullable: false),
-                    IdFormaPago = table.Column<int>(type: "int", nullable: false),
-                    IdEmpleado = table.Column<int>(type: "int", nullable: false)
+                    IdFormaPago = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

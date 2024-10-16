@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CEntidades
+namespace CDatos.Repositories.Contracts
 {
-    internal class Principal
+    public interface ILibroRepository : IRepository<Libro>
     {
-
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CDatos.Migrations
 {
     [DbContext(typeof(LibreriaContext))]
-    [Migration("20240806124212_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240822193414_campoEmail")]
+    partial class campoEmail
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,6 +37,9 @@ namespace CDatos.Migrations
                     b.Property<string>("Biografia")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CantidadLibrosEscritos")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
@@ -214,10 +217,6 @@ namespace CDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("IdGenero")
                         .HasName("PK_ID_GENERO");
 
@@ -226,11 +225,11 @@ namespace CDatos.Migrations
 
             modelBuilder.Entity("CEntidades.Entidades.GeneroLibro", b =>
                 {
-                    b.Property<int>("IdGenereoLibro")
+                    b.Property<int>("IdGeneroLibro")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdGenereoLibro"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdGeneroLibro"));
 
                     b.Property<int>("IdGenero")
                         .HasColumnType("int");
@@ -238,7 +237,7 @@ namespace CDatos.Migrations
                     b.Property<int>("IdLibro")
                         .HasColumnType("int");
 
-                    b.HasKey("IdGenereoLibro")
+                    b.HasKey("IdGeneroLibro")
                         .HasName("PK_ID_GENEROLIBRO");
 
                     b.HasIndex("IdGenero");
@@ -270,7 +269,7 @@ namespace CDatos.Migrations
                     b.Property<int>("IdEditorial")
                         .HasColumnType("int");
 
-                    b.Property<float>("Precio")
+                    b.Property<float>("PrecioVenta")
                         .HasColumnType("real");
 
                     b.Property<string>("Titulo")
@@ -298,11 +297,9 @@ namespace CDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Documento")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nacionalidad")
@@ -314,11 +311,9 @@ namespace CDatos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoDocumento")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdPersona")
@@ -338,7 +333,7 @@ namespace CDatos.Migrations
                     b.Property<DateTime?>("FechaDevolucion")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaEntrega")
+                    b.Property<DateTime>("FechaInicio")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("FechaLimite")
@@ -378,7 +373,7 @@ namespace CDatos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdVenta"));
 
-                    b.Property<DateTime>("Fecha")
+                    b.Property<DateTime>("FechaVenta")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("IdCliente")

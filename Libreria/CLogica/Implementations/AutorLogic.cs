@@ -2,60 +2,157 @@
 using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
-using CLogica.Implementations;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CLogica.Implementations
 {
     public class AutorLogic : IAutorLogic
     {
         private IAutorRepository _autorRepository;
+        private IPersonaLogic _personaLogic;
 
-        public AutorLogic(IAutorRepository autorRepository)
+        public AutorLogic(IAutorRepository autorRepository, IPersonaLogic personaLogic)
         {
             _autorRepository = autorRepository;
+            _personaLogic = personaLogic;
         }
 
-        public async Task<List<Autor>> GetAll()
+        public List<Autor> ObtenerAutores()
         {
-            return await _autorRepository.GetAll();
+            return _autorRepository.FindAll().ToList();
         }
-        public void CrearAutor(Autor autor) // creo el autor en el repo (bdd)
-        {
-            _autorRepository.Create(autor);
-            _autorRepository.Save();
-        }   
-        public void ModificarAutor(string documentoAutor, Autor autor)
-        {
-            Autor autorExistente = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
-            if (autorExistente == null)
-                throw new ArgumentException("Autor no encontrado");
 
-            autorExistente.Biografia = autor.Biografia;
-            autorExistente.FechaNacimiento = autor.FechaNacimiento;
-
-            _autorRepository.Update(autorExistente);
-            _autorRepository.Save();
+        public List<dynamic> ObtenerAutoresParaListado()
+        {
+            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.PersonaAutor.Nombre, Apellido = a.PersonaAutor.Apellido, FechaNacimiento = a.FechaNacimiento, Nacionalidad = a.PersonaAutor.Nacionalidad, Telefono = a.PersonaAutor.Telefono, Email = a.PersonaAutor.Email, Biografia = a.Biografia }).ToList<dynamic>();
         }
-        public void EliminarAutor(string documentoAutor)
-        {
-            Autor autor = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
-            if (autor == null)
-                throw new ArgumentException("Autor no encontrado");
 
-            _autorRepository.Delete(autor);
-            _autorRepository.Save();
-        }
-        public Autor ObtenerAutor(string documentoAutor)
+        public void AltaAutor(string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia)
         {
+            try
             {
-                Autor autor = _autorRepository.FindByCondition(a => a.Documento == documentoAutor).FirstOrDefault();
-                if (autor == null)
-                    throw new ArgumentException("Autor no encontrado");
+                Persona personaAgregar = new Persona()
+                {
+                    Nombre = nombre,
+                    Apellido = apellido,
+                    Telefono = telefono,
+                    Email = email,
+                    Nacionalidad = nacionalidad
+                };
 
-                return autor;
+                Persona personaNueva = _personaLogic.AltaPersona(personaAgregar);
+
+                Autor autorNuevo = new Autor()
+                {
+                    PersonaAutor = personaNueva,
+                    FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento),
+                    Biografia = biografia
+                };
+
+                List<string> camposErroneos = new List<string>();
+
+                if (string.IsNullOrEmpty(autorNuevo.Biografia))
+                {
+                    camposErroneos.Add("Biografia");
+                }
+
+                if (camposErroneos.Count > 0)
+                {
+                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
+                }
+
+                _autorRepository.CreateAutor(autorNuevo);
+                _autorRepository.Save();
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
-        
+
+        public void BajaAutor(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                throw new ArgumentException("El documento ingresado no es valido.");
+            }
+
+            Autor? autorEliminar = new Autor();
+            if (Int32.TryParse(id, out  int idAutor))
+            {
+                autorEliminar = _autorRepository.FindByCondition(p => p.IdAutor == idAutor).FirstOrDefault();
+
+                if (autorEliminar == null)
+                {
+                    throw new InvalidOperationException("La persona que se desea eliminar no existe.");
+                }
+                
+                _personaLogic.BajaPersona(autorEliminar.PersonaAutor.IdPersona.ToString());
+            }
+            else
+            {
+                throw new InvalidOperationException("El ID ingresado no es valido.");
+
+            }
+
+
+
+            _autorRepository.Delete(autorEliminar);
+            _autorRepository.Save();
+        }
+
+        public void ActualizacionAutor(string idAutor, string nombre, string apellido, string nacionalidad, string email, string fechaNacimiento, string telefono, string biografia)
+        {
+            try
+            {
+                Int32.TryParse(idAutor, out int id);
+                Autor? autorExistente = _autorRepository.GetById(id);
+
+                if (autorExistente == null)
+                {
+                    throw new ArgumentNullException("No se encontro un autor con el ID ingresado.");
+                }
+
+                Persona personaActualizar = new Persona()
+                {
+                    Nombre = nombre,
+                    Apellido = apellido,
+                    Telefono = telefono,
+                    Email = email,
+                    Nacionalidad = nacionalidad,
+                    Autor = autorExistente
+                };
+
+                _personaLogic.ActualizacionPersona(personaActualizar);
+
+                List<string> camposErroneos = new List<string>();
+
+                if (string.IsNullOrEmpty(autorExistente.Biografia))
+                {
+                    camposErroneos.Add("Biografia");
+                }
+
+                if (camposErroneos.Count > 0)
+                {
+                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
+                }
+
+                autorExistente.FechaNacimiento = ValidacionesLogic.ParsearFecha(fechaNacimiento);
+                autorExistente.Biografia = biografia;
+
+                _autorRepository.CreateAutor(autorExistente);
+                _autorRepository.Save();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
-
